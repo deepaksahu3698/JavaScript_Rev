@@ -1,0 +1,62 @@
+Q1-Primitive datatype
+  Ans:-Primitive datatype are immutiabel that means the value of the variable can be re asign be it can not be change,
+  just like function,array,object
+    string
+    number
+    bigint
+    boolean
+    undefined
+    symbol
+    null
+
+Q2:-Scpoe
+   Ans: The scope is the current context of execution in which values and expressions are "visible" or can be referenced. 
+          If a variable or expression is not in the current scope, it will not be available for use. 
+            Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes,
+         but not vice versa.
+
+         There are three type of scope
+         1-Global  Scope 
+         2-Block Scope
+         3- function Scope
+ Q3:-Higher order function
+
+    A Higher-Order function is a function that receives a function as an argument or returns the function as output.
+
+    1-Map:-The map() method creates a new array by calling the callback function provided 
+        as an argument on every element in the input array. 
+        The map() method will take every returned value from the callback 
+        function and creates a new array using those values.
+
+        ex:-const arr1 = [1, 2, 3];
+            const arr2 = arr1.map(function(item) {
+            return item * 2;
+            });
+            console.log(arr2);
+
+
+    2-filter:-The filter() method creates a new array with all elements that pass the test
+                provided by the callback function.
+                The callback function passed to the filter() method accepts 3 arguments: element, index, and array.
+
+        ex:-const persons = [
+                            { name: 'Peter', age: 16 },
+                            { name: 'Mark', age: 18 },
+                            { name: 'John', age: 27 },
+                            { name: 'Jane', age: 14 },
+                            { name: 'Tony', age: 24},
+                            ];
+                            const fullAge = persons.filter(person => person.age >= 18);
+                            console.log(fullAge);
+
+    3-Reduce:-The reduce method executes the callback function on each member of the calling 
+                array which results in a single output value.
+                The reduce method accepts two parameters: 1) The reducer function (callback), 2) 
+                and an optional initialValue.
+
+         const arr = [5, 7, 1, 8, 4];
+                    const sum = arr.reduce(function(accumulator, currentValue) {
+                    return accumulator + currentValue;
+                    });
+                    // prints 25
+                    console.log(sum);       
